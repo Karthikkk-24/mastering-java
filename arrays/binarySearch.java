@@ -7,6 +7,7 @@ public class binarySearch {
         System.out.println(binarySearch(numbers, key));
     }
 
+    // Time Complexity = O(log n)
     public static int binarySearch(int numbers[], int key) {
         int start = 0;
         int end = numbers.length - 1;
