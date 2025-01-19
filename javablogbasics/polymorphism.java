@@ -15,6 +15,6 @@ class Dog extends Animal {
 public class polymorphism {
     public static void main(String[] args) {
         Animal myAnimal = new Dog();
-        myAnimal.sound(); // Calls the overridden method in Cat
+        myAnimal.sound(); // Calls the overridden method in Dog
     }
 }
