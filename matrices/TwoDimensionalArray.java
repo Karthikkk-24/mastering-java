@@ -24,7 +24,7 @@ public class TwoDimensionalArray {
         // Matrix Search
         System.out.println("Enter key to be searched:");
         int key = sc.nextInt();
-        System.out.println("Key found: " + MatrixSearch.printMatrix(matrix, key));
+        System.out.println("Key found: " + MatrixSearch.searchMatrix(matrix, key));
 
         sc.close();
     }

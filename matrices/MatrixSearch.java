@@ -1,7 +1,7 @@
 package matrices;
 
 public class MatrixSearch {
-    public static boolean printMatrix(int[][] matrix, int key) {
+    public static boolean searchMatrix(int[][] matrix, int key) {
         if (matrix == null || matrix.length == 0) {
             System.out.println("Empty matrix");
             return false;
@@ -15,6 +15,30 @@ public class MatrixSearch {
             }
         }
 
+        return false;
+    }
+
+    public static boolean staircaseSearch(int[][] matrix, int key) {
+        if (matrix == null || matrix.length == 0) {
+            System.out.println("Empty matrix");
+            return false;
+        }
+
+        int row = 0;
+        int col = matrix[0].length - 1;
+
+        while (col >=0 && row < matrix.length) {
+            System.out.println(matrix[row][col]);
+
+            if (matrix[row][col] < key) {
+                row++;
+            } else if (matrix[row][col] > key) {
+                col--;
+            } else {
+                return true;
+            }
+        }
+        
         return false;
     }
 }
